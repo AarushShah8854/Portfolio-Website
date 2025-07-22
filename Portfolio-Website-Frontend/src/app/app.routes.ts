@@ -1,9 +1,10 @@
 import { Routes } from '@angular/router';
 import { Home } from './components/home/home';
-import { AboutMe } from './components/about-me/about-me';
-import { Projects } from './components/projects/projects';
-import { ContactForms } from './components/contact-forms/contact-forms';
-import { Admin } from './components/admin/admin';
+import { Work } from './components/work/work';
+import { Servicesprovided } from './components/servicesprovided/servicesprovided';
+import { Blog } from './components/blog/blog';
+import { About } from './components/about/about';
+import { GetInTouch } from './components/get-in-touch/get-in-touch';
 
 export const routes: Routes = [
 
@@ -17,20 +18,24 @@ export const routes: Routes = [
         component: Home
     },
     {
-        path:'about-me',
-        component: AboutMe
+        path:'work',
+        component: Work
     },
     {
-        path: 'projects',
-        component: Projects
+        path:'services-provided',
+        component: Servicesprovided
     },
     {
-        path: 'contact-form',
-        component: ContactForms
+        path:'blog',
+        component: Blog
     },
     {
-        path: 'admin',
-        component: Admin
+        path:'about',
+        component: About
+    },
+    {
+        path:'get-in-touch',
+        component: GetInTouch
     }
 
 ];

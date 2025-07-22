@@ -1,0 +1,29 @@
+.container::before {
+    content:"";
+    background-image: url('/assets/images/developer-table.jpg');
+    background-size:cover;
+    background-position: center;
+    opacity: 0.2;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -1;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 11rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #e6fff5;
+    color: #00664d;
+    border-radius: 12px;
+    padding: 1rem;
+    padding-top: 10px;
+    
+}
